@@ -5,9 +5,11 @@ const Accordion = () => {
   const toggleExpand = () => setExpand((prevExpand) => !prevExpand);
 
   return (
-    <div>
-      <button onClick={toggleExpand}>header +</button>
-      {expand && <div>this is just a simple pomponent</div>}
+    <div className="accordion">
+      <button onClick={toggleExpand}>
+        header <span>{expand ? "-" : "+"}</span>
+      </button>
+      {expand && <div className="content">this is just a simple pomponent</div>}
     </div>
   );
 };
