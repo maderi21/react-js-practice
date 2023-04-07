@@ -1,13 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Accordion from "./components/accordion/accordion";
-import Editable from "./components/editable/Editable";
+import Child from "./components/child";
+import Parent from "./components/parent";
 
 function App() {
   return (
     <div className="App">
       <Accordion />
-      <Editable />
+      <Parent />
+      <Child />
     </div>
   );
 }
